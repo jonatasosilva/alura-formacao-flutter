@@ -1,4 +1,3 @@
-import 'package:bytebank2/database/app_database.dart';
 import 'package:bytebank2/database/dao/contact_dao.dart';
 import 'package:bytebank2/models/contact.dart';
 import 'package:flutter/material.dart';
@@ -47,7 +46,7 @@ class _ContactFormState extends State<ContactForm> {
               padding: const EdgeInsets.only(top: 16.0),
               child: SizedBox(
                 width: double.maxFinite,
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text('Create'),
                   onPressed: () {
                     final String name = _nameController.text;
