@@ -5,7 +5,7 @@ import 'package:bytebank2/models/transaction.dart';
 import 'package:flutter/material.dart';
 
 class TransactionsList extends StatelessWidget {
-  final TransferenciaWebClient _webClient = TransferenciaWebClient();
+  final TransactionWebClient _webClient = TransactionWebClient();
 
   @override
   Widget build(BuildContext context) {

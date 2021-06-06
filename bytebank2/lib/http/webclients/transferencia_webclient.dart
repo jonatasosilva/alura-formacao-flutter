@@ -5,7 +5,7 @@ import 'package:http/http.dart';
 
 import '../webclient.dart';
 
-class TransferenciaWebClient {
+class TransactionWebClient {
   Future<List<Transaction>> findAll() async {
     final Response response = await client.get(baseUrl);
     final List<dynamic> decodedJson = jsonDecode(response.body);
